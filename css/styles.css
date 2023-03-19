@@ -1,21 +1,40 @@
-/* Global */
+/* GLOBAL */
+:root {
+  --primary-color: #2e2f42;
+  --par-color: #434455;
+  --accent-color: #4d5ae5;
+  --hover-color: #404bbf;
+  --body-color: #ffffff;
+  --light-color: #f4f4fd;
+}
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #2e2f42;
+  color: var(--primary-color);
+  background-color: var(--body-color);
 }
-
-
-/* Headder */
+/* HEADER */
 
 .header-nav {
   text-decoration: none;
 }
 
 .header-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   text-decoration: none;
+  display: flex;
+  color: var(--accent-color);
 }
 
+.logo-studio-part-top {
+  color: var(--primary-color);
+}
 .header-list {
   list-style: none;
 }
@@ -24,55 +43,37 @@ body {
   list-style: none;
 }
 
- .logo-web-part {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #4d5ae5;
-}
-
- .logo-studio-part {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #2e2f42;
-}
-
 .nav-info {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #2e2f42;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
 .nav-info:hover,
 .nav-info:focus {
-  color: #404bbf;
+  color: var(--hover-color);
 }
 
 .contacts {
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #434455;
+  letter-spacing: 0.02em;
+  color: var(--par-color);
   text-decoration: none;
 }
 
 .contacts:hover,
 .contacts:focus {
-  color: #404bbf;
+  color: var(--hover-color);
 }
 
-/* Main */
+/* MAIN */
 
-/* Section 1 */
+/* HERO */
 
 .hero-title {
   font-style: normal;
@@ -81,164 +82,184 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--body-color);
+  background-color: var(--par-color);
 }
 
 .main-button {
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #ffffff;
+  color: var(--body-color);
   cursor: pointer;
-  background-color: #4d5ae5;
+  background-color: var(--accent-color);
 }
 
 .main-button:hover {
-  background-color: #404bbf;
+  background-color: var(--hover-color);
 }
 
-/* Section 2 */
+/* ADVANTAGES */
 
-.section-2-title {
+.advantages-title {
   opacity: 0;
 }
 
-.section-2-list {
+.advantages-list {
   list-style: none;
 }
 
-.section-2-list-title {
-  font-style: normal;
+.advantages-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2e2f42;
+  color: var(--primary-color);
 }
 
-.section-2-parag {
-  font-style: normal;
-  font-weight: 400;
+.advantages-parag {
   font-size: 16px;
   line-height: 1.5;
-  color: #434455;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.02em;
+  color: var(--par-color);
 }
 
-/* Section 3 */
+/* POSSIBILITIES */
 
-.section-3-title {
-  font-style: normal;
+.possibilities-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--primary-color);
 }
 
-.section-3-list {
+.possibilities-list {
   list-style: none;
 }
 
-/* Section 4 */
+/* OUR TEAM */
 
-.section-4-title {
-  font-style: normal;
+.team {
+  background-color: var(--light-color);
+}
+
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--primary-color);
 }
 
-.section-4-list {
+.team-list {
   list-style: none;
 }
 
-.section-4-list-title {
-  font-style: normal;
+.team-list-item {
+  background-color: var(--body-color);
+}
+
+.team-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2e2f42;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
   list-style: none;
 }
 
-.section-4-list-par {
-  font-style: normal;
-  font-weight: 400;
+.team-lsit-par {
   font-size: 16px;
   line-height: 1.5;
-  color: #434455;
+  letter-spacing: 0.02em;
+  color: var(--par-color);
 }
 
-/* Footer */
+/* FOOTER */
 
-.footer a {
+.footer {
+  background-color: var(--primary-color);
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   text-decoration: none;
+  color: var(--accent-color);
+}
+
+.logo-studio-part-bot {
+  color: var(--light-color);
 }
 
 .footer-par {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #f4f4fd;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
 }
 
-/* Portfolio */
+/* PORTFOLIO */
 
 .main-title {
   opacity: 0;
 }
 
-/* Menu buttons */
+/* MENU BUTTONS */
 
 .button-list {
   list-style: none;
 }
 
 .buttons {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #ffffff;
-  color: #4d5ae5;
+  letter-spacing: 0.04em;
+  background-color: var(--body-color);
+  color: var(--accent-color);
   cursor: pointer;
 }
 
 .buttons:hover,
 .buttons:focus {
-  background-color: #404bbf;
-  color: #ffffff;
+  background-color: var(--hover-color);
+  color: var(--body-color);
 }
 
-/* Images */
+/* IMAGES */
 
 .images-list {
   list-style: none;
 }
 
-.title.images-list-title {
-  font-style: normal;
+.images-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2E2F42;
+  color: var(--primary-color);
 }
 
+.iamges-list-link {
+  text-decoration: none;
+}
 .par.iamges-list-par {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--par-color);
 }
